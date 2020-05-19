@@ -1,15 +1,11 @@
 package com.jjh.spring.main;
 
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
+import com.jjh.spring.store.Book;
+import com.jjh.spring.store.BookStore;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.core.io.ClassPathResource;
-
-import com.jjh.spring.store.Book;
-import com.jjh.spring.store.BookStore;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.jjh.spring.beans","com.jjh.spring.store"})
