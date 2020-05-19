@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.jjh.spring.beans","com.jjh.spring.store"})
+@ComponentScan(basePackages = {"com.jjh.spring.main", "com.jjh.spring.beans","com.jjh.spring.store"})
 public class Main {
 
 	public static void main(String[] args) {

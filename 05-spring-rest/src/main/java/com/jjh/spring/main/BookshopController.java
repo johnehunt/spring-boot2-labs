@@ -2,6 +2,7 @@ package com.jjh.spring.main;
 
 import com.jjh.spring.store.Book;
 import com.jjh.spring.store.BookException;
+import com.jjh.spring.store.BookImpl;
 import com.jjh.spring.store.BookStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,14 +31,14 @@ public class BookshopController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
-    public void addBook(@RequestBody Book book) {
+    public void addBook(@RequestBody BookImpl book) {
         System.out.println("BookshopController.addBook(" + book + ")");
         this.bookstore.addBook(book);
     }
 
     @PutMapping
     @ResponseStatus(HttpStatus.OK)
-    public void updateBook(@RequestBody Book book) {
+    public void updateBook(@RequestBody BookImpl book) {
         System.out.println("BookshopController.updateBook(" + book + ")");
         this.bookstore.updateBook(book);
     }

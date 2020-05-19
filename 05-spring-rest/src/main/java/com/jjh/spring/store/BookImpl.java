@@ -8,6 +8,8 @@ public class BookImpl implements Book {
 	private String publisher;
 	private double price;
 
+	public BookImpl() {}
+
 	public BookImpl(String isbn, String title, String author, String publisher, double price) {
 		this.isbn = isbn;
 		this.title = title;
