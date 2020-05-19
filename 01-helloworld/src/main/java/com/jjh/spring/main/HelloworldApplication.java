@@ -1,4 +1,4 @@
-package com.jjh.helloworld;
+package com.jjh.spring.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
