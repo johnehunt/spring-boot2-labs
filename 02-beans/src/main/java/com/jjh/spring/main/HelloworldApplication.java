@@ -1,7 +1,7 @@
-package com.jjh.helloworld;
+package com.jjh.spring.main;
 
-import com.jjh.beans.DateService;
-import com.jjh.beans.MessageService;
+import com.jjh.spring.beans.DateService;
+import com.jjh.spring.beans.MessageService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
