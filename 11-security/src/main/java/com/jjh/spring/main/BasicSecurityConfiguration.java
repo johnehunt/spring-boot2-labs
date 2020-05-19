@@ -51,7 +51,4 @@ public class BasicSecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 }
 
-//           .anyRequest().hasRole("USER")
-// anyRequest()
-
 
