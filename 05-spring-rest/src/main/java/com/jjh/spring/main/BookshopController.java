@@ -14,39 +14,39 @@ import java.util.List;
 public class BookshopController {
 
     @Autowired
-    private BookStore bookshop;
+    private BookStore bookstore;
 
     @GetMapping("{title}")
     public Book getBook(@PathVariable String title) {
         System.out.println("BookshopController.getBook(" + title + ")");
-        return this.bookshop.getBookByTitle(title);
+        return this.bookstore.getBookByTitle(title);
     }
 
     @GetMapping("list")
     public List<Book> getAllBooks() {
         System.out.println("BookshopController.getAllBooks()");
-        return bookshop.getBooks();
+        return bookstore.getBooks();
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
     public void addBook(@RequestBody Book book) {
         System.out.println("BookshopController.addBook(" + book + ")");
-        this.bookshop.addBook(book);
+        this.bookstore.addBook(book);
     }
 
     @PutMapping
     @ResponseStatus(HttpStatus.OK)
     public void updateBook(@RequestBody Book book) {
         System.out.println("BookshopController.updateBook(" + book + ")");
-        this.bookshop.updateBook(book);
+        this.bookstore.updateBook(book);
     }
 
     @DeleteMapping("{title}")
     @ResponseStatus(HttpStatus.OK)
     public void deleteBook(@PathVariable String title) {
         System.out.println("BookshopController.deleteBook(" + title + ")");
-        bookshop.deleteBook(title);
+        bookstore.deleteBook(title);
     }
 
     @ExceptionHandler(BookException.class)
