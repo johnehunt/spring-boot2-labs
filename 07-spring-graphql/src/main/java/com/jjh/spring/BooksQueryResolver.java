@@ -1,4 +1,4 @@
-package com.jjh.spring.bookstore;
+package com.jjh.spring;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;

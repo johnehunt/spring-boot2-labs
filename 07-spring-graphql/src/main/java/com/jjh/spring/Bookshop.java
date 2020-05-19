@@ -1,4 +1,4 @@
-package com.jjh.spring.bookstore;
+package com.jjh.spring;
 
 import java.util.ArrayList;
 import java.util.List;
