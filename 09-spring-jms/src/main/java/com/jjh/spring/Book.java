@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * Note the Book must be Serializable.
- * Data is being sent form one JVM to another so must be Seriliazable.
  */
 public class Book implements Serializable {
 
