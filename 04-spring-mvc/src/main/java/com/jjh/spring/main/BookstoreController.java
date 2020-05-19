@@ -24,7 +24,7 @@ public class BookstoreController {
         registry.addViewController("/error").setViewName("error");
     }
 	
-	// http://localhost:8080/books
+	// http://localhost:8080/books/list
 	
 	@RequestMapping("/list")
 	public ModelAndView getAllBooks() {
