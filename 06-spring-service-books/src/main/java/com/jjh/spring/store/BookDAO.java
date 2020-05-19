@@ -12,7 +12,7 @@ public class BookDAO {
 
     public BookDAO() {
         Book b1 = new BookImpl("123", "Java and Spring", "John Smith", "Tech Books", 12.99);
-        Book b2 = new BookImpl("123", "Java for Professionals", "Adam Young", "Tech Books", 15.95);
+        Book b2 = new BookImpl("124", "Java for Professionals", "Adam Young", "Tech Books", 15.95);
         books.add(b1);
         books.add(b2);
     }
