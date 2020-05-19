@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>com.jjh</groupId>
-    <artifactId>register</artifactId>
+    <artifactId>bookshop</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
