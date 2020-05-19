@@ -1,4 +1,4 @@
-package com.jjh.spring.bookstore;
+package com.jjh.spring;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
