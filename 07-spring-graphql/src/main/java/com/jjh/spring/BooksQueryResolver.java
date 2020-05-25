@@ -1,6 +1,7 @@
 package com.jjh.spring;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import graphql.kickstart.tools.GraphQLQueryResolver;
+
 import org.springframework.stereotype.Component;
 
 import java.util.List;
