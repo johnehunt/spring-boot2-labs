@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Bookshop {
 
-    private List<Book> books = new ArrayList<>();
+    private final List<Book> books = new ArrayList<>();
 
     public Bookshop() {
         books.add(new Book("121", "Java", "Technical", "Bill Smith"));

@@ -8,7 +8,7 @@ import java.util.List;
 @Component("BookDAO")
 public class BookDAO {
 
-    private List<Book> books = new ArrayList<Book>();
+    private final List<Book> books = new ArrayList<Book>();
 
     public BookDAO() {
         Book b1 = new BookImpl("123", "Java and Spring", "John Smith", "Tech Books", 12.99);

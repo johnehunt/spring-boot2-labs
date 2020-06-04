@@ -15,7 +15,7 @@ public class Main {
 		System.out.print(("Main - Starting the application"));
 		ApplicationContext ctx = SpringApplication.run(Main.class, args);
 
-		BookStore store = (BookStore)ctx.getBean(BookStore.class);
+		BookStore store = ctx.getBean(BookStore.class);
 		System.out.println("---------------------------------------");
 		System.out.println("BookStore.getName(): " + store.getName());
 		System.out.println("BookStore.getMessage(): " + store.getMessage());
