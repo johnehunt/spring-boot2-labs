@@ -4,12 +4,20 @@ import java.util.List;
 
 public interface BookStore {
 
-	String getName();
+    String getName();
 
-	List<Book> getBooks();
+    List<Book> getBooks();
 
-	String getMessage();
+    String getMessage();
 
-	String getDate();
+    String getDate();
+
+    Book getBookByTitle(String title);
+
+    void addBook(Book book);
+
+    void updateBook(Book newVersionOfBook);
+
+    void deleteBook(String title);
 
 }

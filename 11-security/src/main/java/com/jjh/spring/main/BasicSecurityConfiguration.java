@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 @EnableWebSecurity
-@ComponentScan(basePackages = "com.jjh.controller")
+@ComponentScan(basePackages = "com.jjh.spring.controller")
 public class BasicSecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	public BasicSecurityConfiguration() {
@@ -40,12 +40,9 @@ public class BasicSecurityConfiguration extends WebSecurityConfigurerAdapter {
     	System.out.println("BasicSecurityConfiguration.configure(http)");
         http
           .csrf().disable()     // Cross-Site Request Forgery protection turned on by default (see also .cors() Cross Origin Requests)
-          .antMatcher("/books/hello/**")
-          .authorizeRequests()
-          .and()
-          .antMatcher("/books/list/**")
+          .antMatcher("/books/**")
           .authorizeRequests(authorizeRequests ->
-              authorizeRequests.anyRequest().hasRole("ADMIN")
+              authorizeRequests.anyRequest().hasRole("USER")
           )
           .httpBasic();
     }

@@ -11,4 +11,8 @@ public interface Book {
 
 	String getIsbn();
 
+	void setAuthor(String author);
+
+	void setPrice(double price);
+
 }
