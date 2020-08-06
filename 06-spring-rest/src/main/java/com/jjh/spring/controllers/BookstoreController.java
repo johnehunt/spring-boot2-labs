@@ -1,4 +1,4 @@
-package com.jjh.spring.main;
+package com.jjh.spring.controllers;
 
 import com.jjh.spring.store.Book;
 import com.jjh.spring.store.BookException;
@@ -11,11 +11,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("bookshop")
-public class BookshopController {
+@RequestMapping("books")
+public class BookstoreController {
 
     @Autowired
     private BookStore bookstore;
+
+    public BookstoreController() {
+        System.out.println("BookstoreController.<init>()");
+    }
 
     @GetMapping("{title}")
     public Book getBook(@PathVariable String title) {
