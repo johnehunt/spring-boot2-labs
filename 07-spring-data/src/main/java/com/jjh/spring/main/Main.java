@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {
-		"com.jjh.spring.main",
 		"com.jjh.spring.beans",
 		"com.jjh.spring.store",
 		"com.jjh.spring.controllers"})

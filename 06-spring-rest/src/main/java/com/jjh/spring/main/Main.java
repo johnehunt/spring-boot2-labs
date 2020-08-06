@@ -6,7 +6,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {
-		"com.jjh.spring.main",
 		"com.jjh.spring.beans",
 		"com.jjh.spring.store",
 		"com.jjh.spring.controllers"})
