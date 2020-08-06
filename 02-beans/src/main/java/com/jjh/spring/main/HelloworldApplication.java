@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.jjh.beans")
+@ComponentScan(basePackages = "com.jjh.spring.beans")
 public class HelloworldApplication {
 
 	public static void main(String[] args) {
