@@ -17,12 +17,13 @@ public class BookStoreImpl implements BookStore {
 	@Autowired
 	private DateService dateService;
 
-	@Value("#{company.name}")
-	private String name;
+	public BookStoreImpl(@Autowired BookDAO bookDAO) {
+		setBooks(bookDAO.getBooks());
+	}
 
 	@Override
 	public String getName() {
-		return name;
+		return "John's Bookstore";
 	}
 
 	@Override
@@ -35,7 +36,6 @@ public class BookStoreImpl implements BookStore {
 		return books;
 	}
 
-	@Value("#{BookDAO.getBooks()}")
 	public void setBooks(List<Book> books) {
 		this.books = books;
 	}
