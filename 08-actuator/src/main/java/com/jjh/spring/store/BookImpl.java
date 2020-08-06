@@ -1,7 +1,14 @@
 package com.jjh.spring.store;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="books")
 public class BookImpl implements Book {
 
+	@Id
 	private String isbn;
 	private String title;
 	private String author;
