@@ -1,4 +1,4 @@
-package com.jjh.spring.main;
+package com.jjh.spring.controllers;
 
 import com.jjh.spring.store.BookStore;
 import org.springframework.beans.factory.annotation.Autowired;
