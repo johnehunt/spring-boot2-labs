@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component("BookDAO")
+@Component
 public class BookDAO {
 
     private final List<Book> books = new ArrayList<Book>();
