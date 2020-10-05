@@ -2,7 +2,6 @@ package com.jjh.spring.store;
 
 import com.jjh.spring.beans.DateService;
 import com.jjh.spring.beans.MessageService;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -17,21 +16,19 @@ public class BookStoreImpl implements BookStore {
 	@Autowired
 	private DateService dateService;
 
-	public BookStoreImpl(@Autowired BookDAO bookDAO) {
+	@Autowired
+	public BookStoreImpl(BookDAO bookDAO) {
 		setBooks(bookDAO.getBooks());
 	}
 
-	@Override
 	public String getName() {
 		return "John's Bookstore";
 	}
 
-	@Override
 	public String getDate() {
 		return this.dateService.getDate();
 	}
 
-	@Override
 	public List<Book> getBooks() {
 		return books;
 	}
