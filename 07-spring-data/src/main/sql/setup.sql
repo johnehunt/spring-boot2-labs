@@ -1,3 +1,9 @@
+
+CREATE SCHEMA bookstore ;
+
+CREATE USER 'user'@'localhost' IDENTIFIED by 'user123';
+GRANT ALL on bookstore.* TO 'user'@'localhost';
+
 use bookstore;
 
 DROP TABLE IF EXISTS `books`;
