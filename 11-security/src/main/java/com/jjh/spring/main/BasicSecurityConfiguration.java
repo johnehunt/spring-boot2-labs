@@ -38,13 +38,12 @@ public class BasicSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
     	System.out.println("BasicSecurityConfiguration.configure(http)");
-        http
-          .csrf().disable()     // Cross-Site Request Forgery protection turned on by default (see also .cors() Cross Origin Requests)
-          .antMatcher("/books/**")
-          .authorizeRequests(authorizeRequests ->
-              authorizeRequests.anyRequest().hasRole("USER")
-          )
-          .httpBasic();
+
+        http.httpBasic()
+                .and()
+                .authorizeRequests()
+                .antMatchers("/books/**").access("hasRole('USER')");
+
     }
 }
 
