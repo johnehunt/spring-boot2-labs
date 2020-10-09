@@ -11,8 +11,12 @@ import java.util.Optional;
 @Component("BookDAO")
 public class BookDAO {
 
-    @Autowired
     private BookRepository repository;
+
+    @Autowired
+    public BookDAO(BookRepository repository) {
+        this.repository = repository;
+    }
 
     public List<Book> getBooks() {
         System.out.println("BookDAO.getBooks()");

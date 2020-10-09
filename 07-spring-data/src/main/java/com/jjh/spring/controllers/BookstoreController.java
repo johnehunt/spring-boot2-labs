@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.SQLException;
 import java.util.List;
 
 @RestController
@@ -57,6 +58,12 @@ public class BookstoreController {
     @ExceptionHandler(BookException.class)
     @ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "Book not found")
     public void updateFailure() {
+    }
+
+    @ExceptionHandler(SQLException.class)
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "XXXX")
+    public void databaseFailure() {
+        System.out.println("Problem with database update");
     }
 
 }
