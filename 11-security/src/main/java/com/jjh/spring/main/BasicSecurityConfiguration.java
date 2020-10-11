@@ -34,7 +34,9 @@ public class BasicSecurityConfiguration extends WebSecurityConfigurerAdapter {
             .password("{noop}admin")
             .roles("USER", "ADMIN");
     }
- 
+
+    // Configures URL patterns that are secured
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
     	System.out.println("BasicSecurityConfiguration.configure(http)");
