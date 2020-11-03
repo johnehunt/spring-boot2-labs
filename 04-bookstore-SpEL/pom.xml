@@ -14,7 +14,7 @@
     <groupId>com.jjh</groupId>
     <artifactId>04-bookstore-SpEL</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bookstore</name>
+    <name>04-bookstore-SpEL</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
